@@ -8,7 +8,12 @@ import numpy as np
 app = Flask(__name__)
 
 allowed_origins = os.getenv("CORS_ORIGINS", "http://localhost:5173")
-CORS(app, resources={r"/*": {"origins": [origin.strip() for origin in allowed_origins.split(",")]}})
+cors_origins = [
+    origin.strip().rstrip("/")
+    for origin in allowed_origins.split(",")
+    if origin.strip()
+]
+CORS(app, resources={r"/*": {"origins": cors_origins}})
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
