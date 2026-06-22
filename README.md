@@ -292,3 +292,9 @@
 
 ## Website Link
 https://academiaews-weld.vercel.app/
+
+## Youtube Link
+https://youtu.be/RkX6pbwoBe8?si=T9H03wkxyoVpqeOG
+
+## Render Subcription Duration : 22 July 2026 (1 Month), if website cannot be run, you can see the demo by copy paste link youtube
+
